@@ -1,16 +1,10 @@
 /* PALETA DO COFFEBOOK (projeto fictício de portfólio). Ajuste as cores só aqui. */
-:root {
-  --brand: #1f9d8a;
-  /* cor principal */
-  --white: #ffffff;
-  --tint: #e8f6f3;
-  /* tom bem clarinho da cor principal, para alternar seções */
-  --ink: #16201e;
-  /* texto */
-  --muted: #52625e;
-  /* texto de apoio */
-  --line: rgba(22, 32, 30, .16);
-  /* filetes */
-  --hero-gradient: linear-gradient(180deg, #1f9d8a 0%, #ffffff 100%);
-  /* de cima para baixo */
+:root{
+  --brand:#9c6238;                  /* marrom café: cor principal */
+  --white:#ffffff;
+  --tint:#f7efe8;                   /* tom bem clarinho do marrom, para alternar seções */
+  --ink:#20150f;                    /* texto */
+  --muted:#6a5a50;                  /* texto de apoio */
+  --line:rgba(32,21,15,.16);        /* filetes */
+  --hero-gradient:linear-gradient(180deg,#9c6238 0%,#ffffff 100%); /* de cima para baixo */
 }

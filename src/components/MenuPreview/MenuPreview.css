@@ -1,86 +1,19 @@
-.preview {
-  background: var(--tint);
-  color: var(--ink);
-  text-align: center
-}
+.preview{background:var(--tint);color:var(--ink);text-align:center}
+.preview-head h2 em{color:var(--brand)}
+.preview .eyebrow{color:var(--brand)}
+.preview-head{max-width:720px}
 
-.preview-head h2 em {
-  color: var(--brand)
-}
-
-.preview .eyebrow {
-  color: var(--brand)
-}
-
-.preview-head {
-  max-width: 720px
-}
-
-.preview-card {
-  position: relative;
-  display: block;
-  max-width: 900px;
-  height: clamp(450px, 62vw, 610px);
-  margin: 36px auto 0;
-  overflow: hidden;
-  text-align: left;
-  cursor: pointer
-}
-
-.preview-sheet {
-  pointer-events: none;
-  transition: transform .6s cubic-bezier(.2, .8, .2, 1)
-}
-
-.preview-sheet .sheet {
-  max-width: none;
-  margin: 0
-}
-
-.preview-card:hover .preview-sheet {
-  transform: translateY(-8px)
-}
+.preview-card{position:relative;display:block;max-width:900px;height:clamp(450px,62vw,610px);margin:36px auto 0;overflow:hidden;text-align:left;cursor:pointer}
+.preview-sheet{pointer-events:none;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.preview-sheet .sheet{max-width:none;margin:0}
+.preview-card:hover .preview-sheet{transform:translateY(-8px)}
 
 /* desfoque progressivo + esmaecer até a cor do fundo */
-.preview-fade {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  pointer-events: none;
-  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--tint) 82%, transparent) 65%, var(--tint));
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 58%);
-  mask-image: linear-gradient(to bottom, transparent, #000 58%)
-}
-
-.preview-btn {
-  position: absolute;
-  left: 50%;
-  bottom: 34px;
-  transform: translateX(-50%);
-  z-index: 2;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--ink) 25%, transparent)
-}
-
-.preview-card:hover .preview-btn {
-  transform: translateX(-50%) translateY(-3px);
-  background: var(--ink);
-  border-color: var(--ink)
-}
-
-.preview-card:focus-visible {
-  outline-offset: 6px
-}
-
-@media (max-width:700px) {
-  .preview-card {
-    height: 490px
-  }
-
-  .preview-btn {
-    bottom: 22px
-  }
-}
+.preview-fade{position:absolute;left:0;right:0;bottom:0;height:50%;pointer-events:none;
+  background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--tint) 82%,transparent) 65%,var(--tint));
+  -webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 58%);mask-image:linear-gradient(to bottom,transparent,#000 58%)}
+.preview-btn{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:2;box-shadow:0 10px 30px color-mix(in srgb,var(--ink) 25%,transparent)}
+.preview-card:hover .preview-btn{transform:translateX(-50%) translateY(-3px);background:var(--ink);border-color:var(--ink)}
+.preview-card:focus-visible{outline-offset:6px}
+@media (max-width:700px){.preview-card{height:490px}.preview-btn{bottom:22px}}
