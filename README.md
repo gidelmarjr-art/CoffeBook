@@ -7,7 +7,7 @@ Uma aplicação web moderna desenvolvida para amantes de café e leitura, permit
 ## 📸 Demonstração do Projeto
 
 <div align="center">
-  <img src="public/coffeebook.png" alt="CoffeeBook Preview" width="100%" />
+  <img src="public/CoffeBook.png" alt="CoffeeBook Preview" width="100%" />
 </div>
 
 ---
